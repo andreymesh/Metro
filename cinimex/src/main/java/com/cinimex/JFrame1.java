@@ -39,6 +39,11 @@ public class JFrame1 extends javax.swing.JFrame {
 
         jButton1.setText("Показать");
         jButton1.setToolTipText("");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("Поакзать");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -48,6 +53,11 @@ public class JFrame1 extends javax.swing.JFrame {
         });
 
         jButton3.setText("Поакзать");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton4.setText("Поакзать");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -106,14 +116,25 @@ public class JFrame1 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+        this.setVisible(false);
         new JFrame3().setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
+        this.setVisible(false);
         new JFrame5().setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        this.setVisible(false);
+        new JFrame1_1().setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        this.setVisible(false);
+        new JFrame1_2().setVisible(true);
+    }//GEN-LAST:event_jButton3ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
